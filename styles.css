@@ -4,32 +4,32 @@
     padding: 0;
     font-size: 1.15rem;
 }
-
-
-/* * {
-    cursor: url('https://assets.codepen.io/605876/paw-down.png'), auto;
-  }
-  
-  *:active {
-    cursor: url('https://assets.codepen.io/605876/paw-down.png?width=40'), auto;
-  } */
-  
-   
+ 
+html {
+    scroll-behavior: smooth;
+}
 
 nav {
     display: flex;
     justify-content: space-between;
     background-color: rgb(127, 157, 183);
     align-items: center;
-    padding: 2rem 3rem;
-    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: calc(0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
     min-height: 10vh;
 }
 
@@ -38,12 +38,23 @@ li {
     margin: 0.5rem;
 }
 
-a {
+li a:hover {
+text-decoration: underline;
+}
 
+a {
     color: black;
     text-decoration: none;
 }
+a > button {
+    cursor: pointer;
+}
 
+
+
+.content {
+    padding-top: 12rem;
+}
 
 section {
     display: flex;
@@ -80,73 +91,90 @@ h2,p {
     margin-bottom: 1rem;
 }
 
-/* img {
-    width: 40%;
-   text-align: center;
-   border-radius: 50%;
-} */
 
 .img-about-cat {
     min-width: 40%;
     height: 33vw;
     background-image: linear-gradient(to bottom, rgba(66, 71, 75, 0.85), rgba(66, 71, 75, 0.25)), 
-    url('images/About\ cat.gif');
+    url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/779/original/About_cat.gif?1672428170');
     background-size: cover;
     background-position: center;
     background-color: white;
     border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img-about-course {
     min-width: 40%;
     height: 33vw;
     background-image: linear-gradient(to bottom, rgba(66, 71, 75, 0.85), rgba(66, 71, 75, 0.25)), 
-    url('images/about\ cat-2.jpg');
+    url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/780/original/about_cat-2.jpg?1672428214');
     background-size: cover;
     background-position: center;
     background-color: white;
     border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img-cat-in-the-box {
     min-width: 40%;
     height: 33vw;
-    background-image: linear-gradient(to bottom, rgba(66, 71, 75, 0.85), rgba(66, 71, 75, 0.25)),  url('images/cat-in-the-box.jpg');
+    background-image: linear-gradient(to bottom, rgba(66, 71, 75, 0.85), rgba(66, 71, 75, 0.25)),  url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/781/original/cat-in-the-box.jpg?1672428301');
     background-size: cover;
     background-position: center;
     background-color: white;
     border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 .img-sleepy-cat {
     min-width: 40%;
     height: 33vw;
-    background-image:  url('images/sleepy kitty.jpg');
+    background-image: linear-gradient(to bottom, rgba(66, 71, 75, 0.85), rgba(66, 71, 75, 0.25)), url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/782/original/sleepy_kitty.jpg?1672428353');
     background-size: cover;
     background-position: center;
     background-color: white;
     border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img-cleaning {
     min-width: 40%;
     height: 33vw;
-    background-image:  url('images/cleaning.jpeg');
+    background-image: linear-gradient(to bottom, rgba(66, 71, 75, 0.85), rgba(66, 71, 75, 0.25)), url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/783/original/cleaning.jpeg?1672428464');
     background-size: cover;
     background-position: center;
     background-color: white;
     border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img-testimonials {
     min-width: 40%;
     height: 33vw;
-    background-image:  url('images/testimonials.gif');
+    background-image: linear-gradient(to bottom, rgba(66, 71, 75, 0.40), rgba(25, 60, 90, 0.5)),  url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/784/original/testimonials.gif?1672428595');
     background-size: cover;
     background-position: center;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 100% 2% 2% 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    filter: grayscale(50%);
+    
+}
+
+.img-testimonials:hover {
+    filter: brightness(400%);
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s; 
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
 }
 
 span {
@@ -158,7 +186,8 @@ span {
     background-color: rgb(127, 157, 183);
     border: 2px solid rgb(127, 157, 183);;
     border-radius: 5px;
-    
+    color: white;
+    display: flex;
 }
 
 .button:hover {
@@ -166,8 +195,19 @@ span {
     color: rgb(127, 157, 183);
     border: 2px solid rgb(127, 157, 183);
 }
+.button span {
+    color: white;
+    margin-right: 10px;
+    font-size: 1.25rem;
+}
+.button:hover span {
+    color: rgb(127, 157, 183);
+}
 
-
+.button.btn-contact {
+    border: 1px solid white;
+    padding: 1rem 1.5rem;
+}
 
 blockquote {
     border-left: 3px solid black;
@@ -183,4 +223,8 @@ blockquote {
 
 footer p {
     text-align: center;
+}
+
+footer a {
+    text-decoration: underline;
 }
